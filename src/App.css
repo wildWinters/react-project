@@ -1,0 +1,74 @@
+ body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100px;
+    padding: 0 20px; /* Додаємо відступи по боках */
+    box-sizing: border-box;
+}
+
+.Company_name_block {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 10px; /* Відступ між логотипом і назвою компанії */
+    width: 129px;
+    height: 100px;
+}
+
+.Company_name_block img {
+    height: 58px;
+    width: 71px;
+    position:relative;
+    left:20px;
+    top: 10px;
+}
+
+
+.header_CN {
+
+    font-weight: 700;
+    font-size: 18px;
+    color: transparent;
+    background: linear-gradient(90deg, #FF3E80, #5B68DC);
+    line-height: 21px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.children2Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.children2Header h3 {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Adam_Sendler_img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.Adam_Sendler {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.user-block {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Відступ між зображенням та ім'ям користувача */
+}
