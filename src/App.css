@@ -1,4 +1,4 @@
- body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,32 +6,37 @@
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around; 
     align-items: center;
+
     height: 100px;
-    padding: 0 20px; /* Додаємо відступи по боках */
+    padding: 0 20px; 
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .Company_name_block {
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    gap: 10px; /* Відступ між логотипом і назвою компанії */
+    gap: 10px; 
     width: 129px;
     height: 100px;
 }
 
 .Company_name_block img {
-    height: 58px;
-    width: 71px;
     position:relative;
-    left:20px;
-    top: 10px;
+    top: 25px;
+    height: 129px;
+    width: 84px;
 }
 
+#Logotype{
+    position: relative;
+    top: 8px;
+}
 
 .header_CN {
 
@@ -70,5 +75,520 @@
 .user-block {
     display: flex;
     align-items: center;
-    gap: 10px; /* Відступ між зображенням та ім'ям користувача */
+    gap: 10px;
 }
+
+
+.Sign_Up_In{
+    color: black;
+    width: 115px;
+    height: 37px;
+}
+.sign{
+    font-weight:600 ;
+    font: 14px;
+    line-height: 21px;
+}
+.Up{
+    box-sizing: border-box;
+    padding-right:3px;
+    border-right:2px solid black ;
+}
+.in{
+    box-sizing: border-box;
+    padding-left: 3px;
+}
+
+
+/*  */
+
+
+
+.Xcedd{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6F7070;
+
+}
+
+.section1{
+    max-width: 1280px;
+    height: 450px;
+    padding: 32px;
+    display: flex;
+    margin: auto;
+
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 76px;
+    border-radius:24px;
+    left: 80px;
+    top: 132px;
+}
+
+.Left-Block_Mistakes{
+    display: flex;
+    flex-direction: column;
+
+}
+.ten_mistakes_h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #1d1d1d;
+    font-family: "Source Sans 3", serif;
+
+}
+
+.ten_mistakes_p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 30px; */
+    text-align: "left";
+    letter-spacing: -3%;
+    word-spacing: 0px;
+    width: 568px;
+
+}
+.Must_be_grey:visited{
+    color: #6F7070;
+
+}
+
+.Left_Block_Mistakes{
+    width: 548px;
+    height: 386px;
+}
+.Grey_link_mistakes{
+    color: #616161;
+
+}
+
+.section2{
+    margin: auto;
+    max-width:958px;
+    height:851px;
+}
+
+.Lp{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 3%;
+    color: #1D1D1D;
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+.rust{
+    color: red;
+
+}
+
+.describe_opportunity{
+    font-family: "Source Sans 3";
+    font-weight:400 ;
+    font-size: 22px;
+    line-height: 30px;  
+    letter-spacing: -3%;
+}
+.language_blocks{
+    margin-bottom:600px;
+    display: flex;
+    flex-direction: column;
+    max-width: 958px;
+    height: 231px;
+    gap: 48px;
+    justify-content: space-between;
+}
+.Language_block_for_programmers{
+    align-items: center;
+   max-width:958px;
+   height: 231px;  
+   display: flex;
+   gap: 48px;
+
+}
+
+.txt_block_programming{
+    position: relative;
+    top: -12px;
+    width:448px;
+    height: 231px;
+    text-align: justify;
+    font-size: 14px!important;
+    letter-spacing: -3%;
+}
+
+.Our_values{
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+.View_more{
+
+    width: 135px;
+    height: 56px;
+    border-radius:16px;
+    padding: 16px 24px;
+    background-color: black;
+    color: white;
+}
+.card_block_galery {
+    position: relative;
+    width: 416px;
+    height: 481px;
+    max-width: 560px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .card_block_galery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px; 
+    padding: 2px; 
+    background: linear-gradient(45deg, #F367A3, #F0CBEB, #AF8AF3, #68D2E1); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1; 
+}
+
+
+    .slider-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Опционально: для вертикального центрирования */
+        width: 100%; /* Занимает всю ширину */
+      }
+      .Sliders {
+        max-width: 800px; /* Максимальная ширина слайдера */
+        width: 100%; /* Слайдер занимает всю ширину контейнера */
+      }
+      
+.scroll_div{
+    width: 814px;
+    height: 465px;
+    border-radius: 16px;
+}
+.scroll_green_link{
+    color: #046508;
+    font-weight: 400;
+    font-size:16px;
+    font-family: "Roboto", sans-serif;
+}
+.scroll_green_link:active,.scroll_div:visited{
+    color: #046508;
+}
+
+.scrool_h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.4px;
+}
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .Sliders {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  /* Стилізація для крапок */
+  .slick-dots {
+    bottom: -30px; /* Відступ від слайдера */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #000; /* Колір крапок */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #00FF00; /* Колір активної крапки */
+  }
+  
+  /* Стилізація для стрілок */
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev {
+    left: -50px; /* Відступ для лівої стрілки */
+  }
+  .slick-next {
+    right: -50px; /* Відступ для правої стрілки */
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+    color: white; /* Колір іконок стрілок */
+  }
+
+.footer {
+    margin: 0px;    
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 261px; 
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+.footer_container_div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 524px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.Footer-info-block{
+    display:flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 476px;
+    height: 37px;
+ 
+}
+
+.txt_footer_p{
+    font-family: "Source Sans 3", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height:21px;
+}
+
+.footer_galery_container{
+   display: flex;
+   justify-content: space-between;
+   max-width:256px;
+   height: 24px;
+   gap: 24px;
+}
+
+.footer_icon_galery{
+    width: 20px;
+}
+
+.shadow_screen_registraion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Затінення заднього фону */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  
+  .registrations {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 670px;
+    /* max-width: 90vw; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height:584px;
+  }
+  .registrations2{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;  
+    width: 676px;
+    height: 373px;
+    max-width: 90vw;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+  }
+  
+  .h1_sign_in
+  {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register_form_part1, .register_form_password, .register_form_Phone {
+    margin-bottom: 10px;
+  }
+  
+  .register_part {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign_label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    box-shadow: none; 
+    outline: none;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: left;
+    padding-left:0px;  
+  }
+  
+  #Full_name{
+    text-align: left;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}  
+  .Privacy_Policy {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 0px;
+
+  }
+  
+  .Privacy_Policy input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .agree_Policy {
+    font-size: 12px;
+    color: #555;
+  }
+  
+
+  
+  .View_more:hover {
+    background-color: #333;
+  }
+  
+  /* Стилі для повідомлення про вже існуючий акаунт */
+  .account_prompt_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+  }
+  
+  .account_prompt {
+    font-size: 14px;
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  .Log_in {
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  .Log_in:hover {
+    text-decoration: underline;
+  }
+  
+  .div_with_exit{
+    display: flex;
+    justify-content: space-between;
+  }
+  .div_with_exit img{
+    align-self: center;
+  }
+  .div_with_exit .h1_sign_in{
+    text-align: center;
+    padding-left:45% ;
+  }
+
+  .flex-container-chekbox{
+    display: flex;
+  }
+
+  .Our_values_matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 24px; /* Відстань між елементами */
+    max-width: 1200px; /* Обмеження для центрування */
+    margin: 0 auto; /* Центрування */
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .card_block_galery {
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-radius: 24px;
+    text-align: center;
+  }
+  
+  
