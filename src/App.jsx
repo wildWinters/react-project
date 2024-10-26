@@ -1,17 +1,10 @@
 import { useState,useEffect} from 'react';
-import './App.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick"; 
-//!LocalsStorage.getItem("sign in") ====Localstorage.getItem("sign up",) email
-//!LocalsStorage.getItem("sign in") ====Localstorage.getItem("sign up",) password
-//!умовно будуь рінві тто треба буде міняти модалку але 
-//!просто  тернарним оператором треба просто вмонтувати в розмітку header 
-//! по хорошому це траба булоб  розбити  на окремі  файли 
-//! 
-//! не хотілось це робити одниим комітом  
-// але типу коли остання  дія це вхід в акаунт
+import Slider from 'react-slick'; 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import './App.css';
 
 function Page() {
   const [showLogIn,setShowLogIn]=useState(false);
@@ -35,12 +28,7 @@ function Page() {
         ]
     
   return (
-    <>
-      {/* тут треба тільки order замінити але то вже таке   */}
-      {/* проблемно трохи бо воно чогось ту  стилі мені не задало order просто не вписало хоча я все тут надав  але я хз де */}
-
-      {/* <Header sign="" /> */}
-      
+    <>      
       <Mistakes  onSignInClick={handleSignInClick}/>
     <Latest_posts>
         <Latest_posts_part_div  or1 = {1} or2 = {2} txt = {languageArray[1]} src = {"../src/assets/image 54 (3).png"} cls1 = {"txt_lang"} cls2 = {"lang_img"}>
@@ -83,7 +71,7 @@ function EditImg({ width, height, src, borderRadius = 0, cls = null }) {
     />
   );
 }
-//  не знаю наскільки то хороше рішення так як виклик компонента буде брати ресурси через то від того треба відмовитись 
+
 function Txt_p({ children, fontSize, fontFamily, fontWeight, cls }) {
   return (
     <p
@@ -144,7 +132,6 @@ function Header({ sign = null, onSignInClick, }) {
 export function Mistakes({ onSignInClick }) {
   return (
       <>
-          {/* Передаємо sign і onSignInClick у Header */}
           <Header sign="sign" onSignInClick={onSignInClick} />
           <section className='section1'>
               <div className='Left_Block_Mistakes'>
@@ -320,14 +307,14 @@ export  {Our_values};
 
 function SimpleSlider() {
   const settings = {
-    dots: true,           // Ввімкнення крапок
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,         // Ввімкнення стрілок для перемикання
-    nextArrow: <NextArrow />,  // Кастомний правий перемикач
-    prevArrow: <PrevArrow />   // Кастомний лівий перемикач
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
 
   return (
@@ -376,7 +363,6 @@ function SimpleSlider() {
   );
 }
 
-// Компоненти для стрілок (перемикачів)
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -461,7 +447,6 @@ function Sign_up_in_choice({up_or_in}){
     mail.addEventListener("input", handleMailInput);
     password.addEventListener("input", handlePasswordInput);
   
-    // Очищення event listeners при розмонтаженні компонента
     return () => {
       Name.removeEventListener("input", handleNameInput);
       mail.removeEventListener("input", handleMailInput);
